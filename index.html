@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="ja, en">
+    <head>
+    <meta charset="utf-8">
+    <title>Portfolio Ren H</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Ren H">
+    <meta name="description" content="The portfolio page of Ren H. Ren Hのポートフォリオページです.">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="blurUnderOverlay" class="blurUnderOverlay">
+        <div id="top" class="bgFullImg bgImg1 flex">
+            <a href="#about"><i class="fas fa-angle-double-down"></i></a>
+        </div>
+
+        <header>
+            <!-- Change gNav acting from sticky to fixed by JS -->
+            <nav id="gNav" class="gNav flex fixed">
+                <ul class="flex noWrap">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#works">Works</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <!-- Switch language on this checkbox by JS -->
+                <label for="langChgBtn" id="langChg">Language : <span id="lang"></span></label>
+                <input type="checkbox" id="langChgBtn" onchange="langChg()">
+            </nav>
+        </header>
+
+        <main>
+            <section id="about" class="about content">
+                <h2 class="sticky">ABOUT</h2>
+                <div class="flex container">
+                    <div class="profileImg"><img src="images/profile.png" alt="profile">
+                        <div class="balloon">Hello World !</div>
+                    </div>
+                    <div class="profileDescription flex flexCol">
+                        <p class="ja">
+                            Webデザイン, クライアントサイドプログラミング, WordPressを使用した簡易PHPプログラミング, Web用素材を含む各種写真, ビデオ撮影及びポストプロダクションを行っています.
+                        </p>
+                        <p class="en">
+                            Doing Web-Design, Cliantside-Programming, simple-PHP on WordPress, taking a large variety of Photographs, Videos &amp; Postproduction.
+                        </p>
+                        <p class="ja">
+                            機械設計技術者, 船舶機関士, 一般家庭用IoTデバイスのセールスなどの仕事を渡り歩きながら, クリエイティブな仕事を模索していました.<br> 1年間の海外生活を機に, 以前から興味のあったWebやプログラミングを独学で学び始め,いろいろとWebサイトを作ったりしています.
+                        </p>
+                        <p class="en">
+                            Looking for creative-job while I was working on Automotive-Parts-Designer, Ferry-Engineer, IoT device Sales-Person for home, &amp; some kind of jobs.<br> After 1 year foreign-life in Canada, I have started to learn Programming relates Web field by myself.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills" class="skills content">
+                <h2 class="sticky">SKILLS</h2>
+                <div class="container">
+                    <ul class="flex">
+                        <li>HTML<i class="fab fa-html5 logo"></i><br><span class="Lv">Lv </span><span class="currentLv">75</span><span class="maxLv">/100</span></li>
+                        <li>Markdown<i class="fab fa-markdown logo"></i><br><span class="Lv">Lv </span><span class="currentLv">70</span><span class="maxLv">/100</span></li>
+                        <li>CSS<i class="fab fa-css3 logo"></i><br><span class="Lv">Lv </span><span class="currentLv">65</span><span class="maxLv">/100</span></li>
+                        <li>SASS<i class="fab fa-sass logo"></i><br><span class="Lv">Lv </span><span class="currentLv">30</span><span class="maxLv">/100</span></li>
+                        <li>JavaScript<i class="fab fa-js-square logo"></i><br><span class="Lv">Lv </span><span class="currentLv">25</span><span class="maxLv">/100</span></li>
+                        <li>PHP<i class="fab fa-php logo"></i><br><span class="Lv">Lv </span><span class="currentLv">15</span><span class="maxLv">/100</span></li>
+                    </ul>
+                    <ul class="flex">
+                        <li>Photo<i class="fas fa-camera logo"></i><br><span class="Lv">Lv </span><span class="currentLv">70</span><span class="maxLv">/100</span></li>
+                        <li>Video<i class="fas fa-video logo"></i><br><span class="Lv">Lv </span><span class="currentLv">40</span><span class="maxLv">/100</span></li>
+                        <li>WordPress<i class="fab fa-wordpress logo"></i><br><span class="Lv">Lv </span><span class="currentLv">40</span><span class="maxLv">/100</span></li>
+                    </ul>
+                    <ul class="flex">
+                        <li>Photoshop<img class="logoImg" src="images/icons/ps_cc_app_RGB.svg" alt="Photoshop"><br><span class="Lv">Lv </span><span class="currentLv">60</span><span class="maxLv">/100</span></li>
+                        <li>Illustrator<img class="logoImg" src="images/icons/ai_cc_app_RGB.svg" alt="Illustrator"><br><span class="Lv">Lv </span><span class="currentLv">30</span><span class="maxLv">/100</span></li>
+                        <li>Dreamweaver<img class="logoImg" src="images/icons/dw_cc_app_RGB.svg" alt="Dreamweaver"><br><span class="Lv">Lv </span><span class="currentLv">50</span><span class="maxLv">/100</span></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="works" class="works content">
+                <h2 class="sticky">WORKS</h2>
+
+                <div class="container flex">
+
+                    <section class="webDev">
+                        <h3>Web Development</h3>
+                        <div class="container flex">
+                            <a href="https://pseudo-coffee.r3n-sample.work/" target="_blank" class="flip">
+                                <div class="off">
+                                    <div class="imgContainer"><img src="images/Pseudo_Coffee_Thumbnail.png" alt="Pseudo Coffee" class="thumbnail"></div>
+                                    <div class="skillsFor">
+                                        <i class="fab fa-html5 logo"></i>
+                                        <i class="fab fa-css3 logo"></i>
+                                        <img src="images/icons/creativecloud_appicon_RGB.svg" alt="Adobe-Products" class="logoImg">
+                                    </div>
+                                </div>
+                                <div class="on flex">
+                                    <p><span class="title">Pseudo Coffee</span><br><i class="fas fa-coffee logo"></i><br>
+                                        <span class="ja">喫茶店のWebサイトです<br>※店舗は実在しません</span>
+                                        <span class="en">An imaginary Café's web site</span></p>
+                                </div>
+                            </a>
+                            <a href="https://www.pseudo-trip-japan.r3n-sample.work/" target="_blank" class="flip">
+                                <div class="off">
+                                    <div class="imgContainer"><img src="images/Pseudo_Trip_Japan_Thumbnail.png" alt="Pseudo Trip Japan" class="thumbnail"></div>
+                                    <div class="skillsFor">
+                                        <i class="fab fa-html5 logo"></i>
+                                        <i class="fab fa-css3 logo"></i>
+                                        <img src="images/icons/creativecloud_appicon_RGB.svg" alt="Adobe-Products" class="logoImg">
+                                    </div>
+                                </div>
+                                <div class="on flex">
+                                    <p><span class="title">Pseudo Trip Japan</span><br><i class="fas fa-suitcase logo"></i><br>
+                                        <span class="ja">旅行代理店のWebサイトです<br>※店舗は実在しません</span>
+                                        <span class="en">An imaginary Travel-Agency's web site</span></p>
+                                </div>
+                            </a>
+                            <a href="https://pseudo-knowledge.com/" target="_blank" class="flip">
+                                <div class="off">
+                                    <div class="imgContainer"><img src="images/Pseudo_Knowledge_Thumbnail.png" alt="Pseudo Knowledge" class="thumbnail"></div>
+                                    <div class="skillsFor">
+                                        <i class="fab fa-html5 logo"></i>
+                                        <i class="fab fa-css3 logo"></i>
+                                        <i class="fab fa-wordpress logo"></i>
+                                        <img src="images/icons/creativecloud_appicon_RGB.svg" alt="Adobe-Products" class="logoImg">
+                                    </div>
+                                </div>
+                                <div class="on flex">
+                                    <p><span class="title">Pseudo Knowledge</span><br><i class="fas fa-pen-nib logo"></i><br>
+                                        <span class="ja">私の学習内容記録兼雑記ブログです</span>
+                                        <span class="en">My Blog about memorandom for Web Development &amp; Miscellany from my daily life</span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </section>
+
+                    <section class="photo">
+                        <h3>Photograph</h3>
+                        <div class="container">
+                            <div class="grid gallery">
+                                <!-- グリッドアイテムは個別に配置されるので,div要素などでは囲まずに配置する -->
+                                <!-- data属性は data- に続けて任意の名前と値を付与できる -->
+                                <img class="more thumb colSpan3 rowSpan3" src="images/photograph-Lr/photo-1.jpg" alt="" data-largeImg="images/photograph-Lr/photo-1.jpg">
+                                <img class="thumb colSpan rowSpan" src="images/photograph-Lr/photo-2.jpg" alt="" data-largeImg="images/photograph-Lr/photo-2.jpg">
+                                <img class="thumb colSpan rowSpan" src="images/photograph-Lr/photo-3.jpg" alt="" data-largeImg="images/photograph-Lr/photo-3.jpg">
+                                <img class="thumb colSpan rowSpan" src="images/photograph-Lr/photo-4.jpg" alt="" data-largeImg="images/photograph-Lr/photo-4.jpg">
+                                <img class="thumb colSpan rowSpan" src="images/photograph-Lr/photo-5.jpg" alt="" data-largeImg="images/photograph-Lr/photo-5.jpg">
+                                <img class="thumb colSpan rowSpan" src="images/photograph-Lr/photo-6.jpg" alt="" data-largeImg="images/photograph-Lr/photo-6.jpg">
+                                <img class="thumb colSpan rowSpan" src="images/photograph-Lr/photo-7.jpg" alt="" data-largeImg="images/photograph-Lr/photo-7.jpg">
+                                <img class="more thumb colSpan rowSpan2" src="images/photograph-Lr/photo-8.jpg" alt="" data-largeImg="images/photograph-Lr/photo-8.jpg">
+                                <img class="thumb colSpan rowSpan" src="images/photograph-Lr/photo-9.jpg" alt="" data-largeImg="images/photograph-Lr/photo-9.jpg">
+                                <img class="thumb colSpan rowSpan" src="images/photograph-Lr/photo-10.jpg" alt="" data-largeImg="images/photograph-Lr/photo-10.jpg">
+                                <img class="thumb colSpan2 rowSpan2" src="images/photograph-Lr/photo-11.jpg" alt="" data-largeImg="images/photograph-Lr/photo-11.jpg">
+                                <img class="thumb colSpan rowSpan" src="images/photograph-Lr/photo-12.jpg" alt="" data-largeImg="images/photograph-Lr/photo-12.jpg">
+                                <img class="thumb colSpan rowSpan" src="images/photograph-Lr/photo-13.jpg" alt="" data-largeImg="images/photograph-Lr/photo-13.jpg">
+                                <img class="thumb colSpan rowSpan" src="images/photograph-Lr/photo-14.jpg" alt="" data-largeImg="images/photograph-Lr/photo-14.jpg">
+                                <img class="thumb colSpan rowSpan" src="images/photograph-Lr/photo-15.jpg" alt="" data-largeImg="images/photograph-Lr/photo-15.jpg">
+                                <img class="thumb colSpan2 rowSpan2" src="images/photograph-Lr/photo-16.jpg" alt="" data-largeImg="images/photograph-Lr/photo-16.jpg">
+                                <img class="thumb colSpan rowSpan" src="images/photograph-Lr/photo-17.jpg" alt="" data-largeImg="images/photograph-Lr/photo-17.jpg">
+                                <img class="thumb colSpan rowSpan" src="images/photograph-Lr/photo-18.jpg" alt="" data-largeImg="images/photograph-Lr/photo-18.jpg">
+                                <img class="thumb colSpan rowSpan" src="images/photograph-Lr/photo-19.jpg" alt="" data-largeImg="images/photograph-Lr/photo-19.jpg">
+                                <img class="thumb colSpan rowSpan" src="images/photograph-Lr/photo-20.jpg" alt="" data-largeImg="images/photograph-Lr/photo-20.jpg">
+                                <img class="thumb colSpan rowSpan" src="images/photograph-Lr/photo-21.jpg" alt="" data-largeImg="images/photograph-Lr/photo-21.jpg">
+                                <img class="thumb colSpan rowSpan" src="images/photograph-Lr/photo-22.jpg" alt="" data-largeImg="images/photograph-Lr/photo-22.jpg">
+                                <img class="thumb colSpan rowSpan" src="images/photograph-Lr/photo-23.jpg" alt="" data-largeImg="images/photograph-Lr/photo-23.jpg">
+                                <img class="thumb colSpan rowSpan2" src="images/photograph-Lr/photo-24.jpg" alt="" data-largeImg="images/photograph-Lr/photo-24.jpg">
+                                <img class="thumb colSpan rowSpan2" src="images/photograph-Lr/photo-25.jpg" alt="" data-largeImg="images/photograph-Lr/photo-25.jpg">
+                                <img class="thumb colSpan rowSpan" src="images/photograph-Lr/photo-26.jpg" alt="" data-largeImg="images/photograph-Lr/photo-26.jpg">
+                                <img class="thumb colSpan2 rowSpan2" src="images/photograph-Lr/photo-27.jpg" alt="" data-largeImg="images/photograph-Lr/photo-27.jpg">
+                                <img class="thumb colSpan rowSpan" src="images/photograph-Lr/photo-28.jpg" alt="" data-largeImg="images/photograph-Lr/photo-28.jpg">
+                                <img class="thumb colSpan rowSpan" src="images/photograph-Lr/photo-29.jpg" alt="" data-largeImg="images/photograph-Lr/photo-29.jpg">
+                                <img class="thumb colSpan rowSpan" src="images/photograph-Lr/photo-30.jpg" alt="" data-largeImg="images/photograph-Lr/photo-30.jpg">
+                                <img class="thumb colSpan rowSpan" src="images/photograph-Lr/photo-31.jpg" alt="" data-largeImg="images/photograph-Lr/photo-31.jpg">
+                                <img class="thumb colSpan rowSpan" src="images/photograph-Lr/photo-32.jpg" alt="" data-largeImg="images/photograph-Lr/photo-32.jpg">
+                                <img class="thumb colSpan rowSpan2" src="images/photograph-Lr/photo-33.jpg" alt="" data-largeImg="images/photograph-Lr/photo-33.jpg">
+                                <img class="thumb colSpan rowSpan" src="images/photograph-Lr/photo-34.jpg" alt="" data-largeImg="images/photograph-Lr/photo-34.jpg">
+                                <img class="thumb colSpan rowSpan" src="images/photograph-Lr/photo-35.jpg" alt="" data-largeImg="images/photograph-Lr/photo-35.jpg">
+                                <img class="thumb colSpan rowSpan2" src="images/photograph-Lr/photo-36.jpg" alt="" data-largeImg="images/photograph-Lr/photo-36.jpg">
+                                <img class="thumb colSpan rowSpan" src="images/photograph-Lr/photo-37.jpg" alt="" data-largeImg="images/photograph-Lr/photo-37.jpg">
+                                <img class="thumb colSpan rowSpan" src="images/photograph-Lr/photo-38.jpg" alt="" data-largeImg="images/photograph-Lr/photo-38.jpg">
+                                <img class="thumb colSpan2 rowSpan2" src="images/photograph-Lr/photo-39.jpg" alt="" data-largeImg="images/photograph-Lr/photo-39.jpg">
+                                <img class="thumb colSpan rowSpan" src="images/photograph-Lr/photo-40.jpg" alt="" data-largeImg="images/photograph-Lr/photo-40.jpg">
+                                <img class="thumb colSpan rowSpan" src="images/photograph-Lr/photo-41.jpg" alt="" data-largeImg="images/photograph-Lr/photo-41.jpg">
+                                <img class="thumb colSpan rowSpan" src="images/photograph-Lr/photo-42.jpg" alt="" data-largeImg="images/photograph-Lr/photo-42.jpg">
+                                <img class="more thumb colSpan2 rowSpan4" src="images/photograph-Lr/photo-43.jpg" alt="" data-largeImg="images/photograph-Lr/photo-43.jpg">
+                                <img class="thumb colSpan rowSpan" src="images/photograph-Lr/photo-44.jpg" alt="" data-largeImg="images/photograph-Lr/photo-44.jpg">
+                                <img class="thumb colSpan rowSpan" src="images/photograph-Lr/photo-45.jpg" alt="" data-largeImg="images/photograph-Lr/photo-45.jpg">
+                                <img class="thumb colSpan rowSpan" src="images/photograph-Lr/photo-46.jpg" alt="" data-largeImg="images/photograph-Lr/photo-46.jpg">
+                            </div>
+                        </div>
+                    </section>
+                    
+                </div>
+            </section>
+
+            <section id="contact" class="contact content">
+                <h2 class="sticky">CONTACT</h2>
+                <div class="flex container">
+                    <ul class="flex">
+                        <li class="facebook"><a href="https://www.facebook.com/Pseudo-Knowledge-709745476069792" target="_blank"><i class="fab fa-facebook-f logo"></i></a></li>
+                        <li class="twitter"><a href="https://twitter.com/KATEhearDNA" target="_blank"><i class="fab fa-twitter logo"></i></a></li>
+                        <li class="instagram"><a href="https://www.instagram.com/kateheardna/" target="_blank"><i class="fab fa-instagram logo"></i></a></li>
+                        <li class="github"><a href="https://github.com/H-R3N" target="_blank"><i class="fab fa-github logo"></i></a></li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <small class="copyright fixed">&copy; 2018 Ren H</small>
+        </footer>
+
+        <a href="#top" id="toTop">Back<br>to<br>Top<i class="fas fa-angle-double-up"></i></a>
+        
+    </div>
+    
+    <div id="overlay" class="overlay"><i class="fas fa-times"></i></div>
+    <img src="" alt="" id="largeImg" class="largeImg">
+
+    <script src="js/main.js"></script>
+</body>
+</html>
